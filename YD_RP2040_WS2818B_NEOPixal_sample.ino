@@ -1,7 +1,7 @@
 #include <Adafruit_NeoPixel.h>
 
 // Define the pin where the WS2812 LED is connected
-#define LED_PIN    23  // YD-RP2040 built-in WS2812 is typically connected to GPIO16
+#define LED_PIN    23  // YD-RP2040 built-in WS2812 is typically connected to GPIO23
 
 // Define the number of LEDs
 #define LED_COUNT  1   // Only one built-in LED
@@ -13,7 +13,7 @@ void setup() {
   // Initialize the NeoPixel library
   strip.begin();
   strip.show();  // Initialize all pixels to 'off'
-}
+} 
 
 void loop() {
   // Call the rainbow function with a delay to create the effect
